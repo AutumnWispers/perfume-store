@@ -3,17 +3,38 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- Dynamic title can be updated via JS later -->
-  <title>Luxury Perfume | AuraScents</title>
+  <!-- SEO Title (Will be dynamically improved later if needed) -->
+  <title>Luxury Perfume for Men & Women | AuraScents</title>
 
-  <!-- Meta Description -->
-  <meta name="description" content="Buy premium luxury perfume from AuraScents. Discover long-lasting fragrances crafted for elegance and timeless impressions.">
+  <!-- Optimized Meta Description -->
+  <meta name="description" content="Shop long-lasting luxury perfumes online at AuraScents. Discover premium fragrances for men and women crafted for elegance and confidence.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
+
+  <!-- Product Schema (Generic Template) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luxury Perfume by AuraScents",
+    "description": "Premium long-lasting luxury perfume crafted for elegance and timeless impressions.",
+    "brand": {
+      "@type": "Brand",
+      "name": "AuraScents"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "1499",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
 </head>
 
 <body onload="loadProduct()">
@@ -33,30 +54,40 @@
 
 <section class="product-page">
 
-  <!-- Add default fallback alt text -->
-  <img id="product-image" alt="Luxury perfume by AuraScents">
+  <img id="product-image" alt="Luxury perfume bottle by AuraScents">
 
   <div class="product-info">
 
-    <!-- Keep H1 for product name -->
     <h1 id="product-name">Premium Luxury Perfume</h1>
 
     <p class="price" id="product-price">₹0</p>
 
     <p id="product-desc">
-      Discover a premium long-lasting fragrance crafted with elegance and sophistication.
+      Discover a premium long-lasting fragrance crafted for men and women. AuraScents luxury perfumes combine woody, floral, citrus, and oud notes to deliver unforgettable impressions.
     </p>
+
+    <ul>
+      <li>Long-lasting fragrance</li>
+      <li>Premium quality ingredients</li>
+      <li>Suitable for daily wear & special occasions</li>
+      <li>Elegant and modern bottle design</li>
+    </ul>
 
     <button class="cta" id="add-btn">Add to Cart</button>
 
   </div>
 </section>
 
-<!-- Hidden SEO fallback content -->
-<section style="display:none;">
-  <h2>Buy Luxury Perfume Online</h2>
-  <p>AuraScents offers premium fragrances including woody, floral, citrus and oud perfumes. Shop high-quality long-lasting perfumes online at affordable prices.</p>
+<section class="related-links">
+  <h2>Explore More</h2>
+  <p>
+    Browse our complete <a href="shop.html">luxury perfume collection</a> or learn more <a href="about.html">about AuraScents</a>.
+  </p>
 </section>
+
+<footer class="footer">
+  <p>© 2025 AuraScents. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
