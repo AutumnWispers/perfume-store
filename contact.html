@@ -1,26 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact | AuraScents</title>
+  <meta charset="UTF-8">
+
+  <!-- SEO Title -->
+  <title>Contact AuraScents | Luxury Perfume Support</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Contact AuraScents for inquiries about our luxury perfumes, orders, and support. We are here to help you choose your perfect fragrance.">
+
+  <!-- Mobile Optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header class="navbar">
-  <div class="logo">AuraScents</div>
+  <div class="logo">
+    <a href="index.html">AuraScents</a>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+  </nav>
 </header>
 
 <section class="page-header">
-  <h1>Contact</h1>
+  <h1>Contact AuraScents</h1>
+  <p>We would love to hear from you.</p>
 </section>
 
 <section class="contact">
+
+  <h2>Get in Touch</h2>
+
   <form onsubmit="alert('Message sent (demo)'); return false;">
-    <input placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button class="cta">Send</button>
+    
+    <label for="name">Name</label>
+    <input id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Your Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+    <button class="cta" type="submit">Send Message</button>
+
   </form>
+
+  <div class="contact-info">
+    <h2>Customer Support</h2>
+    <p>Email: support@aurascents.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </div>
+
+</section>
+
+<!-- Hidden SEO Content -->
+<section style="display:none;">
+  <h2>Luxury Perfume Customer Support</h2>
+  <p>Contact AuraScents for premium perfume inquiries, fragrance recommendations, and customer support assistance.</p>
 </section>
 
 </body>

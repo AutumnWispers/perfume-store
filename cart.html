@@ -2,24 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cart | AuraScents</title>
+
+  <!-- SEO Title -->
+  <title>Your Shopping Cart | AuraScents Luxury Perfumes</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Review your selected luxury perfumes in the AuraScents shopping cart. Secure checkout and premium fragrance collection.">
+
+  <!-- Mobile Optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Robots (Cart usually should not rank heavily) -->
+  <meta name="robots" content="noindex, follow">
+
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
+
 <body onload="loadCart()">
 
 <header class="navbar">
-  <div class="logo">AuraScents</div>
+  <div class="logo">
+    <a href="index.html">AuraScents</a>
+  </div>
   <nav>
+    <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
   </nav>
 </header>
 
 <section class="cart">
-  <h2>Your Cart</h2>
-  <div id="cart-items"></div>
-  <h3>Total: <span id="total">₹0</span></h3>
+  <h1>Your Shopping Cart</h1>
+
+  <div id="cart-items">
+    <!-- Cart items will load here -->
+  </div>
+
+  <div class="cart-summary">
+    <h2>Total Amount</h2>
+    <h3>Total: <span id="total">₹0</span></h3>
+  </div>
+
+  <button class="cta">Proceed to Checkout</button>
+</section>
+
+<!-- Hidden SEO Context -->
+<section style="display:none;">
+  <h2>Luxury Perfume Online Shopping</h2>
+  <p>AuraScents offers premium perfumes including woody, floral, citrus, ocean, and oud fragrances. Add your favorite scent to the cart and enjoy luxury fragrance shopping online.</p>
 </section>
 
 </body>

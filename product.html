@@ -2,29 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Product | AuraScents</title>
+
+  <!-- Dynamic title can be updated via JS later -->
+  <title>Luxury Perfume | AuraScents</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Buy premium luxury perfume from AuraScents. Discover long-lasting fragrances crafted for elegance and timeless impressions.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
+
 <body onload="loadProduct()">
 
 <header class="navbar">
-  <div class="logo">AuraScents</div>
+  <div class="logo">
+    <a href="index.html">AuraScents</a>
+  </div>
   <nav>
-    <a href="shop.html">Back to Shop</a>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
     <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
   </nav>
 </header>
 
 <section class="product-page">
-  <img id="product-image">
+
+  <!-- Add default fallback alt text -->
+  <img id="product-image" alt="Luxury perfume by AuraScents">
 
   <div class="product-info">
-    <h1 id="product-name"></h1>
-    <p class="price" id="product-price"></p>
-    <p id="product-desc"></p>
+
+    <!-- Keep H1 for product name -->
+    <h1 id="product-name">Premium Luxury Perfume</h1>
+
+    <p class="price" id="product-price">₹0</p>
+
+    <p id="product-desc">
+      Discover a premium long-lasting fragrance crafted with elegance and sophistication.
+    </p>
+
     <button class="cta" id="add-btn">Add to Cart</button>
+
   </div>
+</section>
+
+<!-- Hidden SEO fallback content -->
+<section style="display:none;">
+  <h2>Buy Luxury Perfume Online</h2>
+  <p>AuraScents offers premium fragrances including woody, floral, citrus and oud perfumes. Shop high-quality long-lasting perfumes online at affordable prices.</p>
 </section>
 
 </body>
