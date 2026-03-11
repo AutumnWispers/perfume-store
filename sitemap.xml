@@ -26,4 +26,9 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://aurascentstore.netlify.app/blog.html</loc>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
